@@ -13,6 +13,7 @@ public class StaffController {
     private StaffService staffService;
     @GetMapping()
     public String getStaff(@RequestParam String id){
+        System.out.println(Thread.currentThread().getName() +" "+  System.currentTimeMillis());
         return staffService.getStaff(id).toString();
     }
 }
