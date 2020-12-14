@@ -13,6 +13,7 @@ public class StaffService {
 
     @Transactional(isolation = Isolation.DEFAULT,propagation = Propagation.REQUIRED)
     public Staff getStaff(String id){
+        System.out.println("get staff");
         return staffRepository.getOne(id);
     }
 }

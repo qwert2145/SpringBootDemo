@@ -17,3 +17,7 @@ GET http://localhost:8080/hello/dateFormat?date=2020-01-02&name=   df dfdf
 GET http://localhost:8080/hello/model?name=343
 
 ###
+GET http://localhost:8080/actuator/env
+
+
+###
